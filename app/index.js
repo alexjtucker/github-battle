@@ -9,7 +9,15 @@ var HelloWorld = React.createClass({
 	}
 });
 
+var HelloUser = React.createClass({
+	render: function () {
+		return(
+			<div> What''s up, {this.props.name}?</div>
+		)
+	}	
+});
+
 ReactDOM.render(
-	<HelloWorld />,
+	<HelloUser name="Alex"/>,
 	document.getElementById('app')
 );
