@@ -1,7 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 
-unction puke (object) {
+function puke (object) {
   return <pre>{JSON.stringify(object, 2, ' ')}</pre>
 }
 
@@ -12,9 +12,9 @@ function Results (props) {
   };
 
 Results.propTypes = {
-  isLoading: PropTypes.bool.isRequired,
-  playersInfo: PropTypes.arrary.isRequired,
-  scores: PropTypes.arrary.isRequired
-}
+  isLoading:   PropTypes.bool.isRequired,
+  playersInfo: PropTypes.array.isRequired,
+  scores:      PropTypes.array.isRequired
+};
 
 module.exports = Results;
